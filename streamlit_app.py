@@ -1,6 +1,6 @@
 import streamlit;
 import pandas;
-import requests
+import requests;
 
 streamlit.title("My Parent's New Healthy Diner");
 
@@ -26,6 +26,6 @@ streamlit.dataframe(fruits_to_show)
 
 #--------------------------------------------------------------------
 # display fruity vice api response
-streamlit.header("Fruityvice Fruit Advice!")
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-streamlit.text(fruityvice_response.json)
+streamlit.header("Fruityvice Fruit Advice!");
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon");
+streamlit.text(fruityvice_response.json);
